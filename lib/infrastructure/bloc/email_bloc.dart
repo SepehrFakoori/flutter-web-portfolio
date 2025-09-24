@@ -19,8 +19,6 @@ class EmailBloc extends Bloc<EmailEvent, EmailState> {
   EmailBloc(this._emailRepository) : super(EmailState.initial());
 
   @override
-
-  @override
   Stream<EmailState> mapEventToState(
     EmailEvent event,
   ) async* {

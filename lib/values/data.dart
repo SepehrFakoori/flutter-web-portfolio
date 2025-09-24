@@ -116,11 +116,6 @@ class Data {
       url: StringConst.LINKED_IN_URL,
     ),
     SocialData(
-      name: StringConst.TWITTER,
-      iconData: FontAwesomeIcons.twitter,
-      url: StringConst.TWITTER_URL,
-    ),
-    SocialData(
       name: StringConst.INSTAGRAM,
       iconData: FontAwesomeIcons.instagram,
       url: StringConst.INSTAGRAM_URL,
@@ -133,41 +128,22 @@ class Data {
   ];
 
   static List<String> mobileTechnologies = [
-    "Android",
-    "Kotlin",
-    "Jetpack Compose",
-    "Flutter",
     "Dart"
-        "Java Android",
+    "Flutter",
   ];
 
   static List<String> otherTechnologies = [
-    "HTML 5",
-    "CSS 3",
-    "JavaScript",
-    "Typescript",
-    "React JS",
-    "Next JS",
-    "Node JS",
+    "Python",
+    "FastAPI",
+    "Django",
+    "Django REST framework",
     "Git",
-    "AWS",
     "Docker",
-    "Kubernetes",
-    "Google Cloud",
-    "Azure",
-    "Travis CI",
-    "Circle CI",
-    "Express",
-    "Chakra UI",
-    "Laravel",
-    "PHP",
     "SQL",
-    "C++",
     "Firebase",
     "Figma",
-    "Adobe XD",
-    "Wordpress",
   ];
+
   static List<SocialData> socialData1 = [
     SocialData(
       name: StringConst.GITHUB,
@@ -179,11 +155,6 @@ class Data {
       iconData: FontAwesomeIcons.linkedin,
       url: StringConst.LINKED_IN_URL,
     ),
-    SocialData(
-      name: StringConst.TWITTER,
-      iconData: FontAwesomeIcons.twitter,
-      url: StringConst.TWITTER_URL,
-    ),
   ];
 
   static List<SocialData> socialData2 = [
@@ -191,11 +162,6 @@ class Data {
       name: StringConst.LINKED_IN,
       iconData: FontAwesomeIcons.linkedin,
       url: StringConst.LINKED_IN_URL,
-    ),
-    SocialData(
-      name: StringConst.TWITTER,
-      iconData: FontAwesomeIcons.twitter,
-      url: StringConst.TWITTER_URL,
     ),
     SocialData(
       name: StringConst.INSTAGRAM,

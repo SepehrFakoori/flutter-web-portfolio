@@ -61,7 +61,10 @@ class NavBar extends StatelessWidget {
       ),
       child: Row(
         children: [
-          AppLogo(fontSize: Sizes.TEXT_SIZE_40, titleColor: appLogoColor,),
+          AppLogo(
+            fontSize: Sizes.TEXT_SIZE_40,
+            titleColor: appLogoColor,
+          ),
           Spacer(),
           InkWell(
             onTap: onMenuTap,
@@ -136,23 +139,26 @@ class NavBar extends StatelessWidget {
   }) {
     List<Widget> items = [];
     for (int index = 0; index < menuList.length; index++) {
-      items.add(
-        NavItem(
-          controller: controller,
-          title: menuList[index].name,
-          route: menuList[index].route,
-          titleColor: titleColor,
-          selectedColor: selectedTitleColor,
-          index: index + 1,
-          isSelected: menuList[index].route == selectedRouteName ? true : false,
-          onTap: () {
-            if (onNavItemWebTap != null) {
-              onNavItemWebTap!(menuList[index].route);
-            }
-          },
-        ),
-      );
-      items.add(SpaceW24());
+      if (index < 1) {
+        items.add(
+          NavItem(
+            controller: controller,
+            title: menuList[index].name,
+            route: menuList[index].route,
+            titleColor: titleColor,
+            selectedColor: selectedTitleColor,
+            index: index + 1,
+            isSelected:
+                menuList[index].route == selectedRouteName ? true : false,
+            onTap: () {
+              if (onNavItemWebTap != null) {
+                onNavItemWebTap!(menuList[index].route);
+              }
+            },
+          ),
+        );
+        items.add(SpaceW24());
+      }
     }
     return items;
   }

@@ -167,86 +167,86 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               ),
             ),
           ),
-          CustomSpacer(heightFactor: 0.1),
-          ResponsiveBuilder(
-            builder: (context, sizingInformation) {
-              double screenWidth = sizingInformation.screenSize.width;
-
-              if (screenWidth <= RefinedBreakpoints().tabletSmall) {
-                return Column(
-                  children: _buildProjectsForMobile(
-                    data: Data.recentWorks,
-                    projectHeight: projectItemHeight.toInt(),
-                    subHeight: subHeight.toInt(),
-                  ),
-                );
-              } else {
-                return Container(
-                  height: (subHeight * (Data.recentWorks.length)) + extra,
-                  child: Stack(
-                    children: _buildRecentProjects(
-                      data: Data.recentWorks,
-                      projectHeight: projectItemHeight.toInt(),
-                      subHeight: subHeight.toInt(),
-                    ),
-                  ),
-                );
-              }
-            },
-          ),
-          CustomSpacer(heightFactor: 0.05),
-          Container(
-            margin: margin,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  StringConst.THERES_MORE.toUpperCase(),
-                  style: textTheme.bodyLarge?.copyWith(
-                    fontSize: responsiveSize(context, 11, Sizes.TEXT_SIZE_12),
-                    letterSpacing: 2,
-                    fontWeight: FontWeight.w300,
-                  ),
-                ),
-                SpaceH16(),
-                MouseRegion(
-                  onEnter: (e) => _viewProjectsController.forward(),
-                  onExit: (e) => _viewProjectsController.reverse(),
-                  child: AnimatedSlideTranstion(
-                    controller: _viewProjectsController,
-                    beginOffset: Offset(0, 0),
-                    targetOffset: Offset(0.05, 0),
-                    child: TextButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, WorksPage.worksPageRoute);
-                      },
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            StringConst.VIEW_ALL_PROJECTS.toLowerCase(),
-                            style: textButtonStyle,
-                          ),
-                          SpaceW12(),
-                          Container(
-                            margin: EdgeInsets.only(
-                                top: textButtonStyle!.fontSize! / 2),
-                            child: Image.asset(
-                              ImagePath.ARROW_RIGHT,
-                              width: 25,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          CustomSpacer(heightFactor: 0.15),
+          // CustomSpacer(heightFactor: 0.1),
+          // ResponsiveBuilder(
+          //   builder: (context, sizingInformation) {
+          //     double screenWidth = sizingInformation.screenSize.width;
+          //
+          //     if (screenWidth <= RefinedBreakpoints().tabletSmall) {
+          //       return Column(
+          //         children: _buildProjectsForMobile(
+          //           data: Data.recentWorks,
+          //           projectHeight: projectItemHeight.toInt(),
+          //           subHeight: subHeight.toInt(),
+          //         ),
+          //       );
+          //     } else {
+          //       return Container(
+          //         height: (subHeight * (Data.recentWorks.length)) + extra,
+          //         child: Stack(
+          //           children: _buildRecentProjects(
+          //             data: Data.recentWorks,
+          //             projectHeight: projectItemHeight.toInt(),
+          //             subHeight: subHeight.toInt(),
+          //           ),
+          //         ),
+          //       );
+          //     }
+          //   },
+          // ),
+          // CustomSpacer(heightFactor: 0.05),
+          // Container(
+          //   margin: margin,
+          //   child: Column(
+          //     crossAxisAlignment: CrossAxisAlignment.start,
+          //     children: [
+          //       Text(
+          //         StringConst.THERES_MORE.toUpperCase(),
+          //         style: textTheme.bodyLarge?.copyWith(
+          //           fontSize: responsiveSize(context, 11, Sizes.TEXT_SIZE_12),
+          //           letterSpacing: 2,
+          //           fontWeight: FontWeight.w300,
+          //         ),
+          //       ),
+          //       SpaceH16(),
+          //       MouseRegion(
+          //         onEnter: (e) => _viewProjectsController.forward(),
+          //         onExit: (e) => _viewProjectsController.reverse(),
+          //         child: AnimatedSlideTranstion(
+          //           controller: _viewProjectsController,
+          //           beginOffset: Offset(0, 0),
+          //           targetOffset: Offset(0.05, 0),
+          //           child: TextButton(
+          //             onPressed: () {
+          //               Navigator.pushNamed(context, WorksPage.worksPageRoute);
+          //             },
+          //             child: Row(
+          //               mainAxisSize: MainAxisSize.min,
+          //               crossAxisAlignment: CrossAxisAlignment.center,
+          //               mainAxisAlignment: MainAxisAlignment.center,
+          //               children: [
+          //                 Text(
+          //                   StringConst.VIEW_ALL_PROJECTS.toLowerCase(),
+          //                   style: textButtonStyle,
+          //                 ),
+          //                 SpaceW12(),
+          //                 Container(
+          //                   margin: EdgeInsets.only(
+          //                       top: textButtonStyle!.fontSize! / 2),
+          //                   child: Image.asset(
+          //                     ImagePath.ARROW_RIGHT,
+          //                     width: 25,
+          //                   ),
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //         ),
+          //       ),
+          //     ],
+          //   ),
+          // ),
+          // CustomSpacer(heightFactor: 0.15),
           AnimatedFooter(),
         ],
       ),
