@@ -85,7 +85,7 @@ class _AnimatedBubbleButtonState extends State<AnimatedBubbleButton>
   @override
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? buttonStyle = textTheme.bodyText1?.copyWith(
+    TextStyle? buttonStyle = textTheme.bodyLarge?.copyWith(
       color: AppColors.accentColor,
       fontSize: Sizes.TEXT_SIZE_16,
       fontWeight: FontWeight.w500,

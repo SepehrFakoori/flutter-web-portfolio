@@ -54,7 +54,7 @@ class _AboutprojectState extends State<Aboutproject> {
     double targetWidth = responsiveSize(context, 118, 150, md: 150);
     double initialWidth = responsiveSize(context, 36, 50, md: 50);
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? bodyTextStyle = textTheme.bodyText1?.copyWith(
+    TextStyle? bodyTextStyle = textTheme.bodyLarge?.copyWith(
       fontSize: Sizes.TEXT_SIZE_18,
       color: AppColors.grey750,
       fontWeight: FontWeight.w400,
@@ -72,7 +72,7 @@ class _AboutprojectState extends State<Aboutproject> {
     BorderRadiusGeometry borderRadius = BorderRadius.all(
       Radius.circular(100.0),
     );
-    TextStyle? buttonStyle = textTheme.bodyText1?.copyWith(
+    TextStyle? buttonStyle = textTheme.bodyLarge?.copyWith(
       color: AppColors.black,
       fontSize: responsiveSize(
         context,
@@ -90,7 +90,7 @@ class _AboutprojectState extends State<Aboutproject> {
             controller: widget.controller,
             text: StringConst.ABOUT_PROJECT,
             coverColor: AppColors.white,
-            textStyle: textTheme.headline4?.copyWith(
+            textStyle: textTheme.headlineLarge?.copyWith(
               fontSize: Sizes.TEXT_SIZE_48,
             ),
           ),
@@ -257,11 +257,11 @@ class ProjectData extends StatelessWidget {
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
 
-    TextStyle? defaultTitleStyle = textTheme.subtitle1?.copyWith(
+    TextStyle? defaultTitleStyle = textTheme.titleLarge?.copyWith(
       color: AppColors.black,
       fontSize: 17,
     );
-    TextStyle? defaultSubtitleStyle = textTheme.bodyText1?.copyWith(
+    TextStyle? defaultSubtitleStyle = textTheme.bodyLarge?.copyWith(
       fontSize: 15,
     );
 

@@ -137,7 +137,7 @@ class _ExperiencePageState extends State<ExperiencePage>
     required double width,
   }) {
     final TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? defaultTitleStyle = textTheme.subtitle1?.copyWith(
+    TextStyle? defaultTitleStyle = textTheme.titleLarge?.copyWith(
       color: AppColors.black,
       fontSize: responsiveSize(
         context,
@@ -211,7 +211,7 @@ class _ExperiencePageState extends State<ExperiencePage>
     required double width,
   }) {
     final TextTheme textTheme = Theme.of(context).textTheme;
-    final TextStyle? bodyText1Style = textTheme.bodyText1?.copyWith(
+    final TextStyle? bodyLargeStyle = textTheme.bodyLarge?.copyWith(
       fontSize: responsiveSize(
         context,
         Sizes.TEXT_SIZE_16,
@@ -238,7 +238,7 @@ class _ExperiencePageState extends State<ExperiencePage>
             Flexible(
               child: AnimatedPositionedText(
                 text: roles[index],
-                textStyle: bodyText1Style,
+                textStyle: bodyLargeStyle,
                 maxLines: 7,
                 width: width,
                 controller: CurvedAnimation(

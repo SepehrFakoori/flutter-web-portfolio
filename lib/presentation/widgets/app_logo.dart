@@ -20,7 +20,7 @@ class AppLogo extends StatelessWidget {
     return Text(
       title,
       style: titleStyle ??
-          textTheme.headline2?.copyWith(
+          textTheme.displayMedium?.copyWith(
             color: titleColor,
             fontSize: fontSize,
           ),

@@ -21,7 +21,7 @@ class TechnologySection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? titleStyle = textTheme.subtitle1?.copyWith(
+    TextStyle? titleStyle = textTheme.titleLarge?.copyWith(
       fontSize: Sizes.TEXT_SIZE_16,
       color: AppColors.black,
     );
@@ -144,7 +144,7 @@ class TechnologySection extends StatelessWidget {
     double? width,
   }) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? bodyText1Style = textTheme.bodyText1?.copyWith(
+    TextStyle? bodyLargeStyle = textTheme.bodyLarge?.copyWith(
       fontSize: Sizes.TEXT_SIZE_15,
       color: AppColors.grey750,
       fontWeight: FontWeight.w400,
@@ -164,7 +164,7 @@ class TechnologySection extends StatelessWidget {
               ),
             ),
             text: item,
-            textStyle: bodyText1Style,
+            textStyle: bodyLargeStyle,
           ),
         ),
       );

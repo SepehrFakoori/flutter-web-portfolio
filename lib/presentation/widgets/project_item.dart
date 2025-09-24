@@ -313,7 +313,7 @@ class _ProjectItemLgState extends State<ProjectItemLg>
     );
     TextTheme textTheme = Theme.of(context).textTheme;
     // textStyle for button for viewing project
-    TextStyle? buttonStyle = textTheme.bodyText1?.copyWith(
+    TextStyle? buttonStyle = textTheme.bodyLarge?.copyWith(
       color: AppColors.black,
       fontSize: responsiveSize(
         context,
@@ -325,20 +325,20 @@ class _ProjectItemLgState extends State<ProjectItemLg>
     );
     // textStyle for the current number or position of project in the list
     TextStyle? defaultNumberStyle = widget.projectNumberStyle ??
-        textTheme.subtitle1?.copyWith(
+        textTheme.titleLarge?.copyWith(
           fontSize: _isHovering ? Sizes.TEXT_SIZE_20 : Sizes.TEXT_SIZE_16,
           color: AppColors.grey550,
           fontWeight: _isHovering ? FontWeight.w400 : FontWeight.w300,
         );
     // textStyle for the title or name of the project
     TextStyle? defaultTitleStyle = widget.titleStyle ??
-        textTheme.subtitle1?.copyWith(
+        textTheme.titleLarge?.copyWith(
           color: AppColors.black,
           fontSize: responsiveSize(context, 24, 40, md: 36, sm: 30),
         );
     // textStyle for the subtitle (describing project platform) of the project
     TextStyle? defaultSubtitleStyle = widget.subtitleStyle ??
-        textTheme.bodyText1?.copyWith(
+        textTheme.bodyLarge?.copyWith(
           color: AppColors.grey700,
           fontSize: 13,
           fontWeight: FontWeight.w400,
@@ -538,27 +538,27 @@ class _ProjectItemSmState extends State<ProjectItemSm>
     double positionOfColoredContainer = heightOfProjectImageCover / 2;
     TextTheme textTheme = Theme.of(context).textTheme;
     // textStyle for button for viewing project
-    TextStyle? buttonStyle = textTheme.bodyText1?.copyWith(
+    TextStyle? buttonStyle = textTheme.bodyLarge?.copyWith(
       color: AppColors.black,
       fontSize: Sizes.TEXT_SIZE_14,
       fontWeight: FontWeight.w500,
     );
     // textStyle for the current number or position of project in the list
     TextStyle? defaultNumberStyle = widget.projectNumberStyle ??
-        textTheme.subtitle1?.copyWith(
+        textTheme.titleLarge?.copyWith(
           fontSize: _isHovering ? Sizes.TEXT_SIZE_18 : Sizes.TEXT_SIZE_16,
           color: AppColors.grey550,
           fontWeight: _isHovering ? FontWeight.w400 : FontWeight.w300,
         );
     // textStyle for the title or name of the project
     TextStyle? defaultTitleStyle = widget.titleStyle ??
-        textTheme.subtitle1?.copyWith(
+        textTheme.titleLarge?.copyWith(
           color: AppColors.black,
           fontSize: 26,
         );
     // textStyle for the subtitle (describing project platform) of the project
     TextStyle? defaultSubtitleStyle = widget.subtitleStyle ??
-        textTheme.bodyText1?.copyWith(
+        textTheme.bodyLarge?.copyWith(
           color: AppColors.grey700,
           fontSize: 12,
           fontWeight: FontWeight.w400,

@@ -318,7 +318,7 @@ class _AboutDevState extends State<AboutDev> {
             text: StringConst.HI,
             width: widget.width,
             maxLines: 3,
-            textStyle: textTheme.headline2?.copyWith(
+            textStyle: textTheme.displayMedium?.copyWith(
               color: AppColors.black,
               fontSize: headerFontSize,
             ),
@@ -332,7 +332,7 @@ class _AboutDevState extends State<AboutDev> {
             text: StringConst.DEV_INTRO,
             width: widget.width,
             maxLines: 3,
-            textStyle: textTheme.headline2?.copyWith(
+            textStyle: textTheme.displayMedium?.copyWith(
               color: AppColors.black,
               fontSize: headerFontSize,
             ),
@@ -352,7 +352,7 @@ class _AboutDevState extends State<AboutDev> {
               sm: widget.width,
             ),
             maxLines: 3,
-            textStyle: textTheme.headline2?.copyWith(
+            textStyle: textTheme.displayMedium?.copyWith(
               color: AppColors.black,
               fontSize: headerFontSize,
             ),
@@ -367,7 +367,7 @@ class _AboutDevState extends State<AboutDev> {
             maxLines: 3,
             factor: 2,
             text: StringConst.DEV_DESC,
-            textStyle: textTheme.bodyText1?.copyWith(
+            textStyle: textTheme.bodyLarge?.copyWith(
               fontSize: responsiveSize(
                 context,
                 Sizes.TEXT_SIZE_16,
@@ -393,7 +393,7 @@ class _AboutDevState extends State<AboutDev> {
               Radius.circular(100.0),
             ),
             title: StringConst.SEE_MY_WORKS.toUpperCase(),
-            titleStyle: textTheme.bodyText1?.copyWith(
+            titleStyle: textTheme.bodyLarge?.copyWith(
               color: AppColors.black,
               fontSize: responsiveSize(
                 context,
@@ -429,8 +429,8 @@ class _AboutDevState extends State<AboutDev> {
     required List<SocialData> data,
   }) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? style = textTheme.bodyText1?.copyWith(color: AppColors.grey750);
-    TextStyle? slashStyle = textTheme.bodyText1?.copyWith(
+    TextStyle? style = textTheme.bodyLarge?.copyWith(color: AppColors.grey750);
+    TextStyle? slashStyle = textTheme.bodyLarge?.copyWith(
       color: AppColors.grey750,
       fontWeight: FontWeight.w400,
       fontSize: 18,

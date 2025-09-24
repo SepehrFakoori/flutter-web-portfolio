@@ -50,11 +50,11 @@ class _AnimatedFooterState extends State<AnimatedFooter>
   Widget build(BuildContext context) {
     double circleImageSize = responsiveSize(context, 100, 150);
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? style = textTheme.bodyText1?.copyWith(
+    TextStyle? style = textTheme.bodyLarge?.copyWith(
       color: AppColors.accentColor,
       fontSize: Sizes.TEXT_SIZE_14,
     );
-    TextStyle? titleStyle = textTheme.headline4?.copyWith(
+    TextStyle? titleStyle = textTheme.headlineLarge?.copyWith(
       color: AppColors.accentColor,
       fontSize: responsiveSize(
         context,

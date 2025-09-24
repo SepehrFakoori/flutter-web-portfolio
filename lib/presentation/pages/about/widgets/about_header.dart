@@ -100,7 +100,7 @@ class AboutDescription extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? style = textTheme.bodyText1?.copyWith(
+    TextStyle? style = textTheme.bodyLarge?.copyWith(
       fontSize: responsiveSize(context, 30, 44, md: 34),
       height: 1.2,
       fontWeight: FontWeight.w200,

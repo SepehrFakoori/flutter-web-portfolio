@@ -102,7 +102,7 @@ class _NavItemState extends State<NavItem> {
                     isUnderlinedOnHover: false,
                     textStyle: widget.titleStyle ??
                         widget.titleStyle ??
-                        textTheme.headline6?.copyWith(
+                        textTheme.headlineSmall?.copyWith(
                           fontSize: selectedTextSize,
                           color: AppColors.accentColor,
                           fontWeight: FontWeight.w400,
@@ -110,7 +110,7 @@ class _NavItemState extends State<NavItem> {
                     hoverColor: AppColors.accentColor,
                     coverColor: AppColors.black,
                     lineThickness: 4,
-                    onHoverTextStyle: textTheme.headline6?.copyWith(
+                    onHoverTextStyle: textTheme.headlineSmall?.copyWith(
                       fontSize: selectedTextSize,
                       color: AppColors.accentColor,
                       fontWeight: FontWeight.w400,
@@ -143,14 +143,14 @@ class _NavItemState extends State<NavItem> {
                       text: widget.title.toLowerCase(),
                       isUnderlinedOnHover: false,
                       textStyle: widget.titleStyle ??
-                          textTheme.bodyText1?.copyWith(
+                          textTheme.bodyLarge?.copyWith(
                             fontSize: unselectedTextSize,
                             fontWeight: FontWeight.w400,
                           ),
                       hoverColor: AppColors.accentColor,
                       coverColor: AppColors.black,
                       lineThickness: 4,
-                      onHoverTextStyle: textTheme.bodyText1?.copyWith(
+                      onHoverTextStyle: textTheme.bodyLarge?.copyWith(
                         fontSize: unselectedTextSize,
                         color: AppColors.accentColor,
                         fontWeight: FontWeight.w400,
@@ -172,12 +172,12 @@ class _NavItemState extends State<NavItem> {
       Sizes.TEXT_SIZE_16,
       md: Sizes.TEXT_SIZE_15,
     );
-    TextStyle? defaultSelectedItemStyle = textTheme.bodyText1?.copyWith(
+    TextStyle? defaultSelectedItemStyle = textTheme.bodyLarge?.copyWith(
       fontSize: textSize,
       color: widget.selectedColor,
       fontWeight: FontWeight.w400,
     );
-    TextStyle? defaultUnselectedItemStyle = textTheme.bodyText1?.copyWith(
+    TextStyle? defaultUnselectedItemStyle = textTheme.bodyLarge?.copyWith(
       fontSize: textSize,
       color: widget.titleColor,
     );
@@ -210,7 +210,7 @@ class _NavItemState extends State<NavItem> {
       child: Text(
         '0$index',
         style: widget.titleStyle ??
-            textTheme.headline2?.copyWith(
+            textTheme.displayMedium?.copyWith(
               fontSize: indexTextSize,
               color: AppColors.grey800,
               // fontWeight: FontWeight.w400,

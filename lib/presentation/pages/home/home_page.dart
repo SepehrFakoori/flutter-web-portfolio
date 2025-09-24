@@ -81,7 +81,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     double subHeight = (3 / 4) * projectItemHeight;
     double extra = projectItemHeight - subHeight;
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? textButtonStyle = textTheme.headline4?.copyWith(
+    TextStyle? textButtonStyle = textTheme.headlineLarge?.copyWith(
       color: AppColors.black,
       fontSize: responsiveSize(context, 30, 40, md: 36, sm: 32),
       height: 2.0,
@@ -105,7 +105,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
       },
       customLoadingAnimation: LoadingHomePageAnimation(
         text: StringConst.DEV_NAME,
-        style: textTheme.headline4!.copyWith(color: AppColors.white),
+        style: textTheme.headlineLarge!.copyWith(color: AppColors.white),
         onLoadingDone: () {
           _slideTextController.forward();
         },
@@ -140,7 +140,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                   AnimatedTextSlideBoxTransition(
                     controller: _recentWorksController,
                     text: StringConst.CRAFTED_WITH_LOVE,
-                    textStyle: textTheme.headline4?.copyWith(
+                    textStyle: textTheme.headlineLarge?.copyWith(
                       color: AppColors.black,
                       fontSize: responsiveSize(context, 30, 48, md: 40, sm: 36),
                       height: 2.0,
@@ -153,7 +153,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                       curve: Interval(0.6, 1.0, curve: Curves.fastOutSlowIn),
                     ),
                     text: StringConst.SELECTION,
-                    textStyle: textTheme.bodyText1?.copyWith(
+                    textStyle: textTheme.bodyLarge?.copyWith(
                       fontSize: responsiveSize(
                         context,
                         Sizes.TEXT_SIZE_16,
@@ -202,7 +202,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               children: [
                 Text(
                   StringConst.THERES_MORE.toUpperCase(),
-                  style: textTheme.bodyText1?.copyWith(
+                  style: textTheme.bodyLarge?.copyWith(
                     fontSize: responsiveSize(context, 11, Sizes.TEXT_SIZE_12),
                     letterSpacing: 2,
                     fontWeight: FontWeight.w300,

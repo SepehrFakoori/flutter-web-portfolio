@@ -95,11 +95,11 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
   Widget build(BuildContext context) {
     getArguments();
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? coverTitleStyle = textTheme.headline2?.copyWith(
+    TextStyle? coverTitleStyle = textTheme.displayMedium?.copyWith(
       color: AppColors.white,
       fontSize: 40,
     );
-    TextStyle? coverSubtitleStyle = textTheme.bodyText1?.copyWith(
+    TextStyle? coverSubtitleStyle = textTheme.bodyLarge?.copyWith(
       color: AppColors.white,
     );
     EdgeInsetsGeometry padding = EdgeInsets.only(

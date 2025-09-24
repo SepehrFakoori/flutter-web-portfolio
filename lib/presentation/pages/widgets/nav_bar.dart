@@ -79,7 +79,7 @@ class NavBar extends StatelessWidget {
   Widget webNavBar(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? style = selectedRouteTitleStyle ??
-        textTheme.bodyText1?.copyWith(
+        textTheme.bodyLarge?.copyWith(
           color: AppColors.black,
           fontWeight: FontWeight.w400,
           fontSize: Sizes.TEXT_SIZE_12,

@@ -175,7 +175,7 @@ class _CertificationCardState extends State<CertificationCard>
           widget.title,
           textAlign: TextAlign.center,
           style: widget.titleTextStyle ??
-              theme.textTheme.headline4?.copyWith(
+              theme.textTheme.headlineLarge?.copyWith(
                 color: AppColors.black,
               ),
         ),
@@ -184,7 +184,7 @@ class _CertificationCardState extends State<CertificationCard>
           widget.subtitle,
           textAlign: TextAlign.center,
           style: widget.subtitleTextStyle ??
-              theme.textTheme.bodyText1?.copyWith(
+              theme.textTheme.bodyLarge?.copyWith(
                 color: AppColors.black,
                 fontSize: Sizes.TEXT_SIZE_16,
               ),

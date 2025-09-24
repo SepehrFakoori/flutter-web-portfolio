@@ -73,7 +73,7 @@ class _NextProjectState extends State<NextProject>
     BorderRadiusGeometry borderRadius = BorderRadius.all(
       Radius.circular(100.0),
     );
-    TextStyle? buttonStyle = textTheme.bodyText1?.copyWith(
+    TextStyle? buttonStyle = textTheme.bodyLarge?.copyWith(
       color: AppColors.black,
       fontSize: responsiveSize(
         context,
@@ -83,7 +83,7 @@ class _NextProjectState extends State<NextProject>
       ),
       fontWeight: FontWeight.w500,
     );
-    TextStyle? projectTitleStyle = textTheme.subtitle1?.copyWith(
+    TextStyle? projectTitleStyle = textTheme.titleLarge?.copyWith(
       color: AppColors.black,
       fontSize: projectTitleFontSize,
     );
@@ -99,7 +99,7 @@ class _NextProjectState extends State<NextProject>
               children: [
                 Text(
                   StringConst.NEXT_PROJECT,
-                  style: textTheme.bodyText1?.copyWith(
+                  style: textTheme.bodyLarge?.copyWith(
                     fontSize: responsiveSize(context, 11, Sizes.TEXT_SIZE_12),
                     letterSpacing: 2,
                     fontWeight: FontWeight.w300,
@@ -161,7 +161,7 @@ class _NextProjectState extends State<NextProject>
                           children: [
                             Text(
                               StringConst.NEXT_PROJECT,
-                              style: textTheme.bodyText1?.copyWith(
+                              style: textTheme.bodyLarge?.copyWith(
                                 fontSize: responsiveSize(
                                   context,
                                   11,

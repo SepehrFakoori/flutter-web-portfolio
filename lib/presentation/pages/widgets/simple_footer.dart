@@ -59,7 +59,7 @@ class SimpleFooterSm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? style = textTheme.bodyText1?.copyWith(
+    TextStyle? style = textTheme.bodyLarge?.copyWith(
       color: AppColors.accentColor,
       fontSize: Sizes.TEXT_SIZE_14,
     );
@@ -110,7 +110,7 @@ class SimpleFooterLg extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? style = textTheme.bodyText1?.copyWith(
+    TextStyle? style = textTheme.bodyLarge?.copyWith(
       color: AppColors.accentColor,
       fontSize: Sizes.TEXT_SIZE_14,
     );
@@ -161,7 +161,7 @@ class BuiltWithFlutter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? style = textTheme.bodyText1?.copyWith(
+    TextStyle? style = textTheme.bodyLarge?.copyWith(
       color: AppColors.accentColor,
       fontSize: Sizes.TEXT_SIZE_14,
     );

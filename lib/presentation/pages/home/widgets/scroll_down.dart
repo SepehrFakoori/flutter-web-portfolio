@@ -13,7 +13,7 @@ class ScrollDownButton extends StatelessWidget {
           quarterTurns: 1,
           child: Text(
             StringConst.SCROLL_DOWN.toUpperCase(),
-            style: Theme.of(context).textTheme.subtitle1?.copyWith(
+            style: Theme.of(context).textTheme.titleLarge?.copyWith(
                   fontSize: 12,
                   letterSpacing: 1.7,
                 ),

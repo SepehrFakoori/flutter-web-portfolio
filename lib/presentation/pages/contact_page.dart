@@ -95,11 +95,11 @@ class _ContactPageState extends State<ContactPage>
   @override
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? initialErrorStyle = textTheme.bodyText1?.copyWith(
+    TextStyle? initialErrorStyle = textTheme.bodyLarge?.copyWith(
       color: AppColors.white,
       fontSize: Sizes.TEXT_SIZE_12,
     );
-    TextStyle? errorStyle = textTheme.bodyText1?.copyWith(
+    TextStyle? errorStyle = textTheme.bodyLarge?.copyWith(
       color: AppColors.errorRed,
       fontWeight: FontWeight.w400,
       fontSize: Sizes.TEXT_SIZE_12,
@@ -133,7 +133,7 @@ class _ContactPageState extends State<ContactPage>
         assignHeight(context, 0.3),
       ),
     );
-    TextStyle? headingStyle = textTheme.headline2?.copyWith(
+    TextStyle? headingStyle = textTheme.displayMedium?.copyWith(
       color: AppColors.black,
       fontSize: responsiveSize(context, 40, 60),
     );
@@ -150,7 +150,7 @@ class _ContactPageState extends State<ContactPage>
                 content: Text(
                   StringConst.EMAIL_FAILED_RESPONSE,
                   textAlign: TextAlign.center,
-                  style: textTheme.bodyText1?.copyWith(
+                  style: textTheme.bodyLarge?.copyWith(
                     fontSize: Sizes.TEXT_SIZE_16,
                     color: AppColors.black,
                   ),
@@ -170,7 +170,7 @@ class _ContactPageState extends State<ContactPage>
                 content: Text(
                   StringConst.EMAIL_RESPONSE,
                   textAlign: TextAlign.center,
-                  style: textTheme.bodyText1?.copyWith(
+                  style: textTheme.bodyLarge?.copyWith(
                     fontSize: Sizes.TEXT_SIZE_16,
                     color: AppColors.black,
                   ),
@@ -217,7 +217,7 @@ class _ContactPageState extends State<ContactPage>
                           ),
                           text: StringConst.CONTACT_MSG,
                           maxLines: 5,
-                          textStyle: textTheme.bodyText1?.copyWith(
+                          textStyle: textTheme.bodyLarge?.copyWith(
                             color: AppColors.grey700,
                             height: 2.0,
                             fontSize: responsiveSize(

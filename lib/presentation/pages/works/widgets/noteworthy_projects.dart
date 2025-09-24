@@ -37,7 +37,7 @@ class _NoteWorthyProjectsState extends State<NoteWorthyProjects>
   @override
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? titleStyle = textTheme.subtitle1?.copyWith(
+    TextStyle? titleStyle = textTheme.titleLarge?.copyWith(
       color: AppColors.black,
       fontSize: responsiveSize(
         context,
@@ -45,7 +45,7 @@ class _NoteWorthyProjectsState extends State<NoteWorthyProjects>
         Sizes.TEXT_SIZE_30,
       ),
     );
-    TextStyle? bodyText1Style = textTheme.bodyText1?.copyWith(
+    TextStyle? bodyLargeStyle = textTheme.bodyLarge?.copyWith(
       fontSize: responsiveSize(
         context,
         Sizes.TEXT_SIZE_16,
@@ -82,7 +82,7 @@ class _NoteWorthyProjectsState extends State<NoteWorthyProjects>
                 curve: Interval(0.6, 1.0, curve: Curves.fastOutSlowIn),
               ),
               text: StringConst.NOTE_WORTHY_PROJECTS_DESC,
-              textStyle: bodyText1Style,
+              textStyle: bodyLargeStyle,
             ),
             SpaceH40(),
             ..._buildNoteworthyProjects(Data.noteworthyProjects),
@@ -153,18 +153,18 @@ class NoteWorthyProjectItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? defaultNumberStyle = textTheme.subtitle1?.copyWith(
+    TextStyle? defaultNumberStyle = textTheme.titleLarge?.copyWith(
       fontSize: Sizes.TEXT_SIZE_16,
       color: AppColors.grey550,
       fontWeight: FontWeight.w400,
     );
-    TextStyle? defaultSourceStyle = textTheme.subtitle1?.copyWith(
+    TextStyle? defaultSourceStyle = textTheme.titleLarge?.copyWith(
       fontSize: Sizes.TEXT_SIZE_16,
       color: AppColors.grey700,
       fontWeight: FontWeight.w400,
       decoration: TextDecoration.underline,
     );
-    TextStyle? defaultProjectNameStyle = textTheme.subtitle1?.copyWith(
+    TextStyle? defaultProjectNameStyle = textTheme.titleLarge?.copyWith(
       fontSize: responsiveSize(
         context,
         Sizes.TEXT_SIZE_16,

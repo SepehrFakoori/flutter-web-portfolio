@@ -61,7 +61,7 @@ class AeriumTextFormField extends StatelessWidget {
         hasTitle ? Text(title, style: titleStyle) : Empty(),
         TextFormField(
           style: textStyle ??
-              textTheme.bodyText1?.copyWith(
+              textTheme.bodyLarge?.copyWith(
                 color: AppColors.black,
                 fontWeight: FontWeight.w400,
               ),
@@ -83,7 +83,7 @@ class AeriumTextFormField extends StatelessWidget {
             focusedBorder: focusedBorder,
             hintText: hintText,
             hintStyle: hintTextStyle ??
-                textTheme.bodyText1?.copyWith(
+                textTheme.bodyLarge?.copyWith(
                   color: AppColors.grey600,
                 ),
           ),
